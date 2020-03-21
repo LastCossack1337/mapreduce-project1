@@ -6,7 +6,7 @@
 /usr/local/hadoop/bin/hdfs dfs -rm -r /1a/input/
 /usr/local/hadoop/bin/hdfs dfs -rm -r /1a/output/
 /usr/local/hadoop/bin/hdfs dfs -mkdir -p /1a/input/
-/usr/local/hadoop/bin/hdfs dfs -copyFromLocal /C/Users/smykh/Desktop/Parking_Violations.csv /1a/input/
+/usr/local/hadoop/bin/hdfs dfs -copyFromLocal ../../parking-violations-data/Parking_Violations.csv /1a/input/
 /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar \
 -file ../../part1/1a/mapper.py -mapper ../../part1/1a/mapper.py \
 -file ../../part1/1a/reducer.py -reducer ../../part1/1a/reducer.py \
