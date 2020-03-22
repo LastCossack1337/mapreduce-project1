@@ -1,12 +1,11 @@
 #!/usr/bin/python
 
+from operator import itemgetter
 import sys
 
 for line in sys.stdin:
-    line = line.split(",")
-    vehiclecolor = line[33]
-    try:
+    vehiclecolor = line.split(",")[33].strip()
+
+    if vehiclecolor:
         issuecolor = str(vehiclecolor)
-        print (("%s\t%s") % (issuecolor, 1))
-    except ValueError:
-        continue
+        print("%s\t%s" % (issuecolor, 1))
