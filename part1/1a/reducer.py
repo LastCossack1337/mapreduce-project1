@@ -16,4 +16,4 @@ for line in sys.stdin:
     
 sorted_dict_color_count = sorted(dict_color_count.items(), key=itemgetter(1), reverse = True)
 for color, count in sorted_dict_color_count:
-    print ('%s\t%s') % (color, count)
+    print '%s\t%s' % (color, count)
