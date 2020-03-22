@@ -5,6 +5,7 @@ import sys
 
 for line in sys.stdin:
     vehiclecolor = line.split(",")[33].strip()
+    vehiclecolor = vehiclecolor.strip("Vehicle Color")
 
     if vehiclecolor:
         issuecolor = str(vehiclecolor)
