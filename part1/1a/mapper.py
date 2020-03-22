@@ -4,9 +4,9 @@ import sys
 
 for line in sys.stdin:
     line = line.split(",")
-    issuedate = line[4].split("/")
+    vehiclecolor = line[35]
     try:
-        issuemonth = int(issuedate[0])
-        print "%s\t%s"  % (issuemonth,1)
+        issuecolor = str(vehiclecolor[0])
+        print("%s\t%s") % (issuecolor, 1)
     except ValueError:
         continue
