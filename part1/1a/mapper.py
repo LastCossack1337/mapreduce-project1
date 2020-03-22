@@ -2,11 +2,11 @@
 
 import sys
 
-for line in sys.stdin:
+or line in sys.stdin:
     line = line.split(",")
-    vehiclecolor = line[35]
+    issuedate = line[4].split("/")			
     try:
-        issuecolor = str(vehiclecolor[0])
-        print "%s\t%s" % (issuecolor, 1)
+        issuemonth = int(issuedate[0])		
+        print "%s\t%s"  % (issuemonth,1)
     except ValueError:
         continue
