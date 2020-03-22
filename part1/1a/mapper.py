@@ -2,7 +2,7 @@
 
 import sys
 
-or line in sys.stdin:
+for line in sys.stdin:
     line = line.split(",")
     issuedate = line[4].split("/")			
     try:
