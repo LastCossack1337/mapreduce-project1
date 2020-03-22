@@ -8,8 +8,4 @@ for line in sys.stdin:
 
     if vehiclecolor:
         issuecolor = str(vehiclecolor)
-        issuecolor == "Vehicle Color"
-        continue
-    else:
-
         print("%s\t%s" % (issuecolor, 1))
