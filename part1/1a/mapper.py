@@ -10,7 +10,7 @@ color_dict = {
     "GRAY":["GRAY","GR","GY","GRY"]
 }
 
-for line in sys_stdin:
+for line in sys.stdin:
     vehiclecolor = line.split(",")[33].strip()
     vehiclecolor = vehiclecolor.strip("Vehicle Color")
 
