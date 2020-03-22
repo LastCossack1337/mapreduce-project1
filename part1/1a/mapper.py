@@ -7,6 +7,6 @@ for line in sys.stdin:
     vehiclecolor = line[35]
     try:
         issuecolor = str(vehiclecolor[0])
-        print("%s\t%s") % (issuecolor, 1)
+        print "%s\t%s" % (issuecolor, 1)
     except ValueError:
         continue
